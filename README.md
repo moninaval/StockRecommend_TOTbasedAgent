@@ -82,3 +82,22 @@ MIT
 ---
 
 Developed as a learning project on LangChain and AI agents for Indian equity analysis.
+
+
+---
+
+## 🌐 LangGraph Agent (Advanced)
+
+This project now supports a LangGraph-based multi-step agent:
+- Each node is a reasoning or execution step
+- Agent dynamically replans unsupported thoughts
+- Graph flow built using LangChain’s LangGraph primitives
+
+Run via `framework/langgraph_engine.py` by calling `build_stock_graph()`.
+
+Example:
+```python
+from framework.langgraph_engine import build_stock_graph
+graph = build_stock_graph()
+graph.invoke({"stock_symbol": "INFY", "log": []})
+```
