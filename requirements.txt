@@ -2,3 +2,5 @@
 openai
 langchain
 langgraph
+langchain-community
+langchain-openai
